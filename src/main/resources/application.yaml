@@ -1,0 +1,30 @@
+access:
+    searchColumns:
+        company: company
+    resultColumns:
+        - First Name
+        - Last Name
+    configuration:
+        path: D:/extraz/Database11.accdb
+        table: Contacts
+word:
+    searchColumns:
+        company: sometinginword
+    resultColumns:
+        - First Name
+        - Last Name
+        - Email Address
+        - Id
+    configuration:
+        path: D:/extraz/someworddoc.docx
+excel:
+    searchColumns:
+        company: Company
+    resultColumns:
+        - First Name
+        - Last Name
+        - Email Address
+        - Id
+    configuration:
+        path: D:/extraz/Database11.xlsx
+        sheet: Contacts
