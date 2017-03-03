@@ -16,7 +16,7 @@ word:
         - Email Address
         - Id
     configuration:
-        path: D:/extraz/someworddoc.docx
+        path: D:/extraz/xdcs1.docx
 excel:
     searchColumns:
         company: Company
