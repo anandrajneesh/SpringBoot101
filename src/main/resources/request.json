@@ -1,0 +1,29 @@
+{
+  "customer":{
+    "familyName":"Malfliet",
+    "firstName":"ChristianeIrma A",
+    "dob":"04/06/2016",
+    "emailAddress":"jan.cools7@telenet.be",
+    "address": {
+      "streetName": "Nieuwstrat",
+      "houseNo":"5",
+      "boxNo":"1",
+      "postalCode":"2630",
+      "city":"Aartselaar",
+      "tel":"003238878451"
+    },
+    "genderCode":1145,
+    "dGenderCode":2,
+    "languageCode":2,
+    "professionCategoryCodeId":1130,
+    "professionCategoryCode":13,
+    "drivingLicenseIssuedOn":"07/13/1970",
+    "claimsForPastFiveYears":0,
+    "vehicle":{
+      "firstTrafficDate":"12/28/2016",
+      "price":1616699.70,
+      "make":"Fiat",
+      "type":"500 C - lounge"
+    }
+  }
+}
