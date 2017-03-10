@@ -8,11 +8,11 @@ if(kw < 75){
 }else if (kw > 115){
     results.ba = 350.0;
 }
-if(unknown < 30.0){
+if(unknown < 30000){
     results.omnium = 2.60;
-}else if(unknown < 50.0){
+}else if(unknown < 50000){
     results.omnium = 2.45;
-}else if(unknown > 50.0){
+}else if(unknown > 50000){
     results.omnium = 2.30;
 }
 results.management=12.5;
