@@ -45,7 +45,7 @@
         "make":"Fiat",
         "type": "500 C - Lounge",
         "kilowatts": 0.0,
-        "garageTyoeId": 1,
+        "garageTypeId": 1,
         "expectableSpentLiveryDate":"dd/mm/yyyy",
         "odoMeterCar": 1234.0,
         "trailerId": 1
