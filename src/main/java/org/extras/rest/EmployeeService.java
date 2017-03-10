@@ -83,7 +83,7 @@ public class EmployeeService {
     }
 
     private Date getDate(String date) throws ParseException {
-        SimpleDateFormat formatter = new SimpleDateFormat("mm/dd/yyyy");
+        SimpleDateFormat formatter = new SimpleDateFormat("dd/mm/yyyy");
         return formatter.parse(date);
     }
 

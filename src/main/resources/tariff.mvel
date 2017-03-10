@@ -1,6 +1,33 @@
-var result = ["tarrif":35];
-if(1 == 1 ){
-    System.out.println(result);
-    result.age = 32;
+var results = [];
+if(kw < 75){
+    results.ba = 230.0;
+}else if (kw < 95){
+    results.ba = 250.0;
+}else if (kw < 115){
+    results.ba = 280.0;
+}else if (kw > 115){
+    results.ba = 350.0;
 }
-return result;
+if(unknown < 30.0){
+    results.omnium = 2.60;
+}else if(unknown < 50.0){
+    results.omnium = 2.45;
+}else if(unknown > 50.0){
+    results.omnium = 2.30;
+}
+results.management=12.5;
+if(custom.old(age_date, 23) && custom.less(age_date, 29)){
+    results.multiplier = 1.5;
+}else if(custom.less(age_date, 23)){
+    results.multiplier = 2;
+}
+if(legalAid){
+    results.legalTariff=38;
+    results.legalTariffTax=16.75
+}else{
+    results.legalTariff=28;
+    results.legalTariffTax=16.75;
+}
+results.driverInsurance=25.42;
+results.driverInsuranceTax=9.25;
+return results;
