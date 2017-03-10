@@ -1,24 +1,24 @@
 var results = [];
-if(kw < 75){
+if(kilowatts < 75){
     results.ba = 230.0;
-}else if (kw < 95){
+}else if (kilowatts < 95){
     results.ba = 250.0;
-}else if (kw < 115){
+}else if (kilowatts < 115){
     results.ba = 280.0;
-}else if (kw > 115){
+}else if (kilowatts > 115){
     results.ba = 350.0;
 }
-if(unknown < 30000){
+if(price < 30000){
     results.omnium = 2.60;
-}else if(unknown < 50000){
+}else if(price < 50000){
     results.omnium = 2.45;
-}else if(unknown > 50000){
+}else if(price > 50000){
     results.omnium = 2.30;
 }
 results.management=12.5;
-if(custom.old(age_date, 23) && custom.less(age_date, 29)){
+if(custom.old(dob_date, 23) && custom.less(dob_date, 29)){
     results.multiplier = 1.5;
-}else if(custom.less(age_date, 23)){
+}else if(custom.less(dob_date, 23)){
     results.multiplier = 2;
 }
 if(legalAid){
