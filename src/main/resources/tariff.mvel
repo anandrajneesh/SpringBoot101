@@ -1,4 +1,4 @@
-var results = [];
+var results = ["ba":0.0];
 if(kilowatts < 75){
     results.ba = 230.0;
 }else if (kilowatts < 95){
@@ -21,7 +21,7 @@ if(custom.old(dob_date, 23) && custom.less(dob_date, 29)){
 }else if(custom.less(dob_date, 23)){
     results.multiplier = 2;
 }
-if(legalAid){
+if(legalAid=="true"){
     results.legalTariff=38;
     results.legalTariffTax=16.75
 }else{

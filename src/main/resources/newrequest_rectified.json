@@ -12,7 +12,7 @@
     "customer": {
       "familyName": "Malfliet",
       "firstname": "A Christian Irma",
-      "dob":"dd/mm/yyyy",
+      "dob":"12/12/1989",
       "emailAddress": "jan.cools7@telenet.be",
       "tel":"003238878451",
       "address": {
@@ -30,7 +30,7 @@
       "professionCategoryCodeId": 1130,
       "professionCategoryCode": 13,
       "usageId": 1,
-      "drivingLicenseIssuedOn":"dd/mm/yyyy",
+      "drivingLicenseIssuedOn":"12/12/2011",
       "drivingLicenseNumber": "abcdefg123154",
       "drivingLicenseCategory": "A",
       "IBAN": "BE09 1324 1234 1256",
@@ -39,14 +39,14 @@
       "vehicle": {
         "carTypeId": 1,
         "chassisNumber": "abcdefg123154",
-        "firstDateTraffic":"dd/mm/yyyy",
+        "firstDateTraffic":"12/12/2000",
         "licensePlate": "abcdefg123154",
         "price": 1616699.70,
         "make":"Fiat",
         "type": "500 C - Lounge",
         "kilowatts": 0.0,
         "garageTypeId": 1,
-        "expectableSpentLiveryDate":"dd/mm/yyyy",
+        "expectableSpentLiveryDate":"11/11/2011",
         "odoMeterCar": 1234.0,
         "trailerId": 1
       }

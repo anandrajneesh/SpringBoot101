@@ -7,6 +7,8 @@ import org.extras.DocPdfUtil;
 import org.extras.MvelRunner;
 import org.extras.config.Configuration;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -34,8 +36,7 @@ public class EmployeeService {
     private MvelRunner mvelRunner;
 
     @RequestMapping(method = RequestMethod.POST)
-    @ResponseBody
-    String insurance(@RequestBody String request){
+    ResponseEntity<String> insurance(@RequestBody String request){
         String pdfPath = null;
         try {
             Gson gson = new Gson();
@@ -56,9 +57,11 @@ public class EmployeeService {
             }
         }catch (Exception e){
             e.printStackTrace();
-            pdfPath = null;
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
         }
-        return pdfPath;
+        JsonObject jsonObject = new JsonObject();
+        jsonObject.addProperty("path",pdfPath);
+        return ResponseEntity.ok(jsonObject.toString());
 
     }
 
