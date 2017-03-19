@@ -1,5 +1,4 @@
 {
-
   "document":{
     "documentId": "123456789",
     "documentTypeId": "123456789",
@@ -16,7 +15,7 @@
       "emailAddress": "jan.cools7@telenet.be",
       "tel":"003238878451",
       "address": {
-        "streeName": "Nieuwstrat",
+        "streetName": "Nieuwstrat",
         "houseNo":"5",
         "boxNo": "1",
         "postalCode": "2630",

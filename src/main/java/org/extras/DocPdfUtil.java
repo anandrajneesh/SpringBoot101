@@ -33,16 +33,13 @@ public class DocPdfUtil {
         os.close();
     }
 
-    private static  HashMap<String,String> localize(Map<String,Object> parameters){
+    private static HashMap<String, String> localize(Map<String, Object> parameters) {
         HashMap<String, String> newMap = new HashMap<String, String>();
-        for(Map.Entry<String,Object> entry : parameters.entrySet()){
-            if(entry.getValue() instanceof String){
-                newMap.put(entry.getKey(), (String) entry.getValue());
-            }
+        for (Map.Entry<String, Object> entry : parameters.entrySet()) {
+            newMap.put(entry.getKey(), entry.getValue().toString());
         }
         return newMap;
     }
-
 
 
 }

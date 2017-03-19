@@ -8,11 +8,11 @@ if(custom.less(drivingLicenseIssuedOn_date,3)){
     return "not accepted";
 }else if(custom.old(dob_date, 80)){
      return "not accepted";
-}else if(custom.less(dob_date, 24) && claimsForPastFiveYears > 0){
+}else if(custom.less(dob_date, 24) && claimsForPastFiveYearsInFault > 0){
       return "not accepted";
-}else if(custom.less(dob_date, 24) && claimsForPastFiveYears > 1){
+}else if(custom.less(dob_date, 24) && claimsForPastFiveYearsInFault > 1){
       return "not accepted";
-}else if(custom.old(dob_date, 30) && claimsForPastFiveYears > 2){
+}else if(custom.old(dob_date, 30) && claimsForPastFiveYearsInFault > 2){
       return "not accepted";
 }
 return "accepted";
