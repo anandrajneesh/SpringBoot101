@@ -1,5 +1,8 @@
 package org.extras;
 
+import com.itextpdf.text.pdf.AcroFields;
+import com.itextpdf.text.pdf.PdfReader;
+import com.itextpdf.text.pdf.PdfStamper;
 import org.docx4j.convert.out.pdf.viaXSLFO.PdfSettings;
 import org.docx4j.model.datastorage.migration.VariablePrepare;
 import org.docx4j.openpackaging.io3.Load3;
@@ -41,5 +44,21 @@ public class DocPdfUtil {
         return newMap;
     }
 
+    public static void createPdfFromDocItext(String documentPath, Map<String, Object> replaceVariables, String outputPath) throws Exception{
+        Map<String, String> normalizedMap = localize(replaceVariables);
+        PdfReader reader = new PdfReader(documentPath);
+        PdfStamper stamper = new PdfStamper(reader, new FileOutputStream(outputPath));
+        AcroFields form = stamper.getAcroFields();
+        Map<String, AcroFields.Item> formFields = form.getFields();
+        for(Map.Entry<String, AcroFields.Item> entry :formFields.entrySet()){
+            String key = entry.getKey();
+            if(key.startsWith("${")){
+                String mapKey = key.substring(2, key.length()-1);
+                form.setField(key, normalizedMap.get(mapKey));
+            }
+        }
+        stamper.setFormFlattening(true);
+		stamper.close();
+    }
 
 }
