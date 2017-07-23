@@ -18,6 +18,11 @@
         <spring.version>1.5.1.RELEASE</spring.version>
     </properties>
     <dependencies>
+         <dependency>
+            <groupId>com.itextpdf</groupId>
+            <artifactId>itextpdf</artifactId>
+            <version>5.4.0</version>
+        </dependency>
         <dependency>
             <!-- Alternative to inheriting from parent spring pom -->
             <groupId>org.springframework.boot</groupId>
