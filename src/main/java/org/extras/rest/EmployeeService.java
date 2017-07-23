@@ -47,13 +47,13 @@ public class EmployeeService {
             if(excludeFromTarrif){
                 //TODO not accepted document
                 pdfPath = newFilePath();
-                DocPdfUtil.createPdfFromDoc(configuration.getNotAcceptedDoc(), flatMap, pdfPath);
+                DocPdfUtil.createPdfFromDocItext(configuration.getNotAcceptedDoc(), flatMap, pdfPath);
             }else{
                 //TODO accepted document calculate tarrif
                 Map<String, Object> tarrifMap = mvelRunner.executeTariffRules(flatMap);
                 flatMap.putAll(tarrifMap);
                 pdfPath = newFilePath();
-                DocPdfUtil.createPdfFromDoc(configuration.getAcceptedDoc(), flatMap, pdfPath);
+                DocPdfUtil.createPdfFromDocItext(configuration.getAcceptedDoc(), flatMap, pdfPath);
             }
         }catch (Exception e){
             e.printStackTrace();
